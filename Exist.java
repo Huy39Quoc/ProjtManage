@@ -37,7 +37,7 @@ public class Exist {
                 }
             }
         }catch(IOException e){
-            System.out.println("Error");
+            System.out.println("Fail to read file.");
         }
         return check;
     }
@@ -119,7 +119,7 @@ public class Exist {
          }
          System.out.println("+" + "-".repeat(125) + "+");
         }catch(IOException e){
-            System.out.println("Error");
+            System.out.println("Fail to read file.");
         }
     }
 }

@@ -15,8 +15,7 @@ import java.util.Scanner;
 public class UserManagement2 {
   
     
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {       
         ArrayList<String> array = new ArrayList<>();
         Create create = new Create();
         Exist exist = new Exist();

@@ -18,7 +18,6 @@ import java.util.Scanner;
  * @author tranhuy
  */
 public class ChangeData {
-    Scanner scanner = new Scanner(System.in);
     
     public void UpdateData(String update){
         Create create = new Create();
@@ -33,7 +32,7 @@ public class ChangeData {
                    write.write(FindData + System.getProperty("line.separator"));
                }else{
                    FindData = create.Updatenew();
-                   write.write(FindData + System.getProperty("line.separator"));
+                   write.write(FindData);
                }
            }
            write.close();
@@ -47,7 +46,7 @@ public class ChangeData {
                System.out.println("Can't delete");
            }
           }catch(IOException e){
-              System.out.println("Error");
+              System.out.println("Fail to read and write to file.");
           }
     }
     
@@ -75,7 +74,7 @@ public class ChangeData {
                System.out.println("Can't delete");
            }
         }catch(IOException e){
-            System.out.println("Error");
+            System.out.println("Fail to delete.");
         }
     }
 }

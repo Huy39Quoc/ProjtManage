@@ -15,7 +15,7 @@ public class Login {
         String FinalLogin = "";
         for(int i = 0; i < input.length(); i++){
             char CharInString = input.charAt(i);
-            if(CharInString != ' '){
+            if(i >= input.indexOf("P") && i <= input.indexOf("d")){
                 FinalLogin += CharInString;
             }
         }
