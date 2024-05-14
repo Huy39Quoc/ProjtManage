@@ -20,9 +20,9 @@ public class SaveToFile {
           }
           save.close();
           array.clear();
-            System.out.println("Saved");
+            System.out.println("Your account has been saved");
     }catch(IOException e){
-            System.out.println("Error");
+            System.out.println("Errors to save");
     }
     }
 }

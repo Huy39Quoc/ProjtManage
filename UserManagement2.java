@@ -90,8 +90,12 @@ public class UserManagement2 {
               
           case "5":
               System.out.println("Save account to file.");
+              if(array.isEmpty()){
+                  System.out.println("There is nothing to save.");
+              }else{
               SaveToFile saveFile = new SaveToFile();
               saveFile.SaveData(array);
+              }
               break;
               
           case "6":
